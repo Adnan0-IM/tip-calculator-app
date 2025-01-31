@@ -16,7 +16,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
     - [Useful resources](#useful-resources)
   - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -30,8 +29,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
-
-
 
 ### Links
 
@@ -50,22 +47,35 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - [Tailwind CSS](https://tailwindcss.com/) - For styles
 
-
 ### What I learned
 
-I learnt how to manipulate "input element of type number", espesially how to hide it`s spin buttons
+During this project, I learned several key concepts:
 
+- How to manipulate number input elements, particularly removing spinner buttons usin CSS
+- Working with icon positioning in input fields
+- Implementing responsive design with Tailwind CSS
+- Managing state for calculator functionality
+
+Code example of hiding number input spinners:
+
+```css
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-inner-spin-button,
+  -webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}
+```
 
 ### Useful resources
 
-- [React Icons](https://www.reacticons.com) - This help with the icons i use
+- [React Icons](https://react-icons.github.io/react-icons/) - Comprehensive icon library for React applications
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Essential reference for Tailwind CSS classes and utilities
+- [MDN Web Docs](https://developer.mozilla.org/) - Detailed documentation for HTML, CSS, and JavaScript
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-
+- Website - [Adnan Iliyasu](https://adnan0-im.github.io/Frontend-Basics-Portfolio/)
+- Frontend Mentor - [@Adnan0-IM](https://www.frontendmentor.io/profile/Adnan0-IM)
+- Twitter - [@Adnan_imd](https://www.twitter.com/Adnan_imd)
