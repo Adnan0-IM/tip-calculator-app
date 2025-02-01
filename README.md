@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./src/assets/desktop.png)
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Adnan0-IM/tip-calculator-app)
+- Live Site URL: [Live Demo](https://tip-calculator-r.netlify.app/)
 
 ## My process
 
