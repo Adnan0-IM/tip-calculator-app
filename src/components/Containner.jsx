@@ -30,7 +30,7 @@ const Containner = () => {
         return;
       }
   
-      setBill(value);
+      setBill(Number(value));
     };
     const handleNoOfPeople = (value) => {
       if (value === "") {
