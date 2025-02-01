@@ -1,21 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "tailwindcss";
 
-
 @theme {
-    
-    --font-Space-Mono: "Space Mono", serif;
-    --text-input: 24px;
-    --tracking-accent: 0.4rem;
-    --color-*: initial;
-    --color-primary-strong-cyan:hsl(172, 67%, 45%); 
-    --color-primary-hover:#9FE8DF;
-    --color-primary-error:#8f000e;
-    --color-neutral-very-dark-cyan: hsl(183, 100%, 15%);
-    --color-neutral-Dark-grayish-cyan: hsl(186, 14%, 43%);
-    --color-neutral-Grayish-cyan: hsl(184, 14%, 56%);
-    --color-neutral-Light-grayish-cyan: hsl(185, 41%, 84%);
-    --color-neutral-Very-light-grayish-cyan: hsl(189, 41%, 97%);
-    --color-neutral-White: hsl(0, 0%, 100%);
-
+  --font-Space-Mono: "Space Mono", serif;
+  --text-input: 24px;
+  --tracking-accent: 0.4rem;
+  --color-*: initial;
+  --color-primary-strong-cyan: hsl(172, 67%, 45%);
+  --color-primary-hover: #9fe8df;
+  --color-primary-error: #dc362e;
+  --color-neutral-very-dark-cyan: hsl(183, 100%, 15%);
+  --color-neutral-Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --color-neutral-Grayish-cyan: hsl(184, 14%, 56%);
+  --color-neutral-Light-grayish-cyan: hsl(185, 41%, 84%);
+  --color-neutral-Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --color-neutral-White: hsl(0, 0%, 100%);
 }
