@@ -18,7 +18,7 @@ const TipButton = ({ setTipPercentage, tipPercentage }) => {
       {percentage.map((percent) => {
         return (
           <button
-            key={crypto.randomUUID()}
+            key={percent}
             onClick={() => handleButtonClick(percent)}
             className={`${activeButton === percent && "bg-primary-strong-cyan text-neutral-very-dark-cyan"} hover:bg-primary-hover focus:bg-primary-hover focus:text-neutral-very-dark-cyan hover:text-neutral-very-dark-cyan text-neutral-White bg-neutral-very-dark-cyan cursor-pointer rounded-md p-2 text-2xl font-semibold sm:px-4 sm:py-2 sm:font-bold`}
           >
