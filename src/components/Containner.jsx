@@ -5,17 +5,18 @@ const Containner = () => {
   const [bill, setBill] = useState("");
   const [noOfPeople, setNoOfPeople] = useState("");
   const [tipPercentage, setTipPercentage] = useState("");
-  const [tipAmount, setTipAmount] = useState(0);
+  const [tipAmountPerPerson, setTipAmountPerPerson] = useState(0);
   const [amountPerPerson, setAmountPerPerson] = useState(0);
   const [dimmed, setDimmed] = useState(true);
 
   useEffect(() => {
     const calculate = () => {
-      let tipAmount = (tipPercentage / 100) * Number(bill);
+      let tipAmount = ((tipPercentage / 100) * Number(bill));
+      let tipAmountPerPerson = tipAmount /noOfPeople
       let totalAmount = tipAmount + Number(bill);
       let amountPerPerson = totalAmount / noOfPeople;
       if (bill && tipPercentage && noOfPeople) {
-        setTipAmount(tipAmount.toFixed(2));
+        setTipAmountPerPerson(tipAmountPerPerson.toFixed(2));
         setAmountPerPerson(amountPerPerson.toFixed(2));
         setDimmed(false);
       }
@@ -45,7 +46,7 @@ const Containner = () => {
     setBill("");
     setNoOfPeople("");
     setTipPercentage("");
-    setTipAmount(0);
+    setTipAmountPerPerson(0);
     setAmountPerPerson(0);
     setDimmed(true);
   };
@@ -65,7 +66,7 @@ const Containner = () => {
           handleNoOfPeople={handleNoOfPeople}
         />
         <Result
-          tipAmount={tipAmount}
+          tipAmountPerPerson={tipAmountPerPerson}
           amountPerPerson={amountPerPerson}
           dimmed={dimmed}
           handleReset={handleReset}

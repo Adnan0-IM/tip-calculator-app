@@ -1,5 +1,5 @@
 
-const Result = ({tipAmount, amountPerPerson, dimmed, handleReset}) => {
+const Result = ({tipAmountPerPerson, amountPerPerson, dimmed, handleReset}) => {
   return (
     <div className="flex h-full px-6 pb-6 sm:p-8">
     <div className="bg-neutral-very-dark-cyan flex-1 rounded-xl p-5 sm:p-8">
@@ -11,7 +11,7 @@ const Result = ({tipAmount, amountPerPerson, dimmed, handleReset}) => {
           <p className="text-neutral-Grayish-cyan text-xs">/ person</p>
         </div>
         <div className="text-primary-strong-cyan text-3xl font-bold sm:text-5xl">
-          ${tipAmount}
+          ${tipAmountPerPerson}
         </div>
       </div>
       <div className="mt-2 flex items-center justify-between pt-4 sm:mt-6">
